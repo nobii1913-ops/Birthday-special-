@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#24143f" />
+  <title>Happy Birthday Gungun 💖</title>
+  <style>
+    :root {
+      --bg1: #21113b;
+      --bg2: #56275f;
+      --pink: #ff8ec7;
+      --pink2: #ffd0e8;
+      --cream: #fff8f3;
+      --gold: #ffd979;
+      --ink: #382143;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--cream);
+      font-family: ui-rounded, "Trebuchet MS", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, #804b9c66, transparent 30%),
+        radial-gradient(circle at 85% 30%, #ff8ec733, transparent 28%),
+        linear-gradient(145deg, var(--bg1), var(--bg2) 55%, #30163f);
+      overflow-x: hidden;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .3;
+      background-image: radial-gradient(#fff 1px, transparent 1.5px);
+      background-size: 43px 43px; animation: twinkle 5s ease-in-out infinite alternate;
+    }
+    @keyframes twinkle { from { opacity: .12; } to { opacity: .42; } }
+    .wrap { width: min(100% - 28px, 760px); margin: auto; position: relative; z-index: 1; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; gap: 12px; }
+    .brand { font-weight: 900; letter-spacing: .3px; color: var(--pink2); }
+    .music-btn, .small-btn {
+      border: 1px solid #ffffff45; background: #ffffff14; color: white; border-radius: 999px;
+      padding: 10px 14px; font: inherit; font-size: .88rem; cursor: pointer; backdrop-filter: blur(8px);
+    }
+    main { padding-bottom: 70px; }
+    .hero { min-height: 76vh; display: grid; align-content: center; justify-items: center; text-align: center; padding: 30px 0 45px; }
+    .eyebrow { color: var(--gold); font-size: .78rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 800; }
+    h1 { font-size: clamp(2.7rem, 12vw, 5.8rem); line-height: .98; margin: 14px 0; letter-spacing: -3px; }
+    .gradient { background: linear-gradient(90deg, #fff4b4, #ff9fce, #d9b7ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .subtitle { max-width: 510px; color: #f7e8ff; font-size: clamp(1rem, 3.8vw, 1.2rem); line-height: 1.65; margin: 8px auto 24px; }
+    .pill { display: inline-flex; gap: 8px; align-items: center; border: 1px solid #ffffff30; background: #ffffff12; padding: 8px 13px; border-radius: 999px; font-size: .85rem; }
+    .btn {
+      border: 0; cursor: pointer; color: #401d47; font: inherit; font-weight: 900; font-size: 1rem;
+      background: linear-gradient(135deg, #ffe8a6, #ff9fce); padding: 15px 23px; border-radius: 16px;
+      box-shadow: 0 10px 30px #ff86c633; transition: transform .2s, box-shadow .2s;
+    }
+    .btn:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 14px 36px #ff86c655; }
+    .hint { color: #e7cfe9; font-size: .8rem; margin-top: 13px; }
+    section { margin: 28px auto; }
+    .card { background: #fff9ff; color: var(--ink); border-radius: 28px; padding: clamp(22px, 5vw, 38px); box-shadow: 0 20px 70px #10071f4d; }
+    .card h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 6vw, 2.4rem); }
+    .card p { line-height: 1.75; }
+    .hidden { display: none !important; }
+    .cake-card { text-align: center; }
+    .cake { font-size: clamp(6rem, 25vw, 10rem); line-height: 1.25; display: inline-block; filter: drop-shadow(0 10px 16px #ff7bbd44); animation: bob 2.6s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
+    .cake-caption { color: #7d5a7d; margin: 0 auto 18px; }
+    .gift-area { text-align: center; }
+    .gift { font-size: 6.5rem; display: block; margin: 8px auto 16px; filter: drop-shadow(0 10px 14px #ff87c966); animation: wiggle 1.8s ease-in-out infinite; }
+    @keyframes wiggle { 0%,100% { transform: rotate(0); } 25% { transform: rotate(-7deg); } 75% { transform: rotate(7deg); } }
+    .letter { background: #fff9ff; color: var(--ink); border-radius: 28px; padding: clamp(23px, 5vw, 42px); position: relative; overflow: hidden; }
+    .letter::after { content: "♡"; position: absolute; right: -8px; bottom: -50px; color: #ffb8da55; font-size: 12rem; line-height: 1; pointer-events: none; }
+    .letter h2 { margin-top: 0; }
+    .letter p { position: relative; z-index: 1; line-height: 1.85; }
+    .signature { font-weight: 900; color: #9b4388; }
+    .final { text-align: center; background: linear-gradient(145deg, #ffdbed, #fff4cc); color: #49234d; }
+    .final .big-heart { font-size: 4.3rem; animation: heartbeat 1.2s infinite; display: inline-block; }
+    @keyframes heartbeat { 0%,100% { transform: scale(1); } 15% { transform: scale(1.14); } 30% { transform: scale(1); } 45% { transform: scale(1.1); } }
+    footer { text-align: center; color: #e6cce9; padding: 12px 0 34px; font-size: .82rem; }
+    .confetti { position: fixed; top: -20px; z-index: 20; pointer-events: none; animation: fall linear forwards; }
+    @keyframes fall { to { transform: translateY(110vh) rotate(720deg); opacity: .2; } }
+    .tiny { font-size: .86rem; color: #876b87; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">✦ Gungun's little universe</div>
+      <button class="music-btn" id="musicToggle" type="button" aria-pressed="false">♫ Play music</button>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="pill">🎀 A tiny website, a big birthday wish</div>
+        <p class="eyebrow" style="margin-top:27px">Attention please…</p>
+        <h1>Happy Birthday<br><span class="gradient">Gungun!</span> 🎂</h1>
+        <p class="subtitle">Aaj officially tumhara din hai. Toh thoda sa drama, thodi si masti, aur end mein ek chhoti si dil se baat. Ready ho, birthday madam? 👀</p>
+        <button class="btn" id="openBtn" type="button">Open your surprise ✨</button>
+        <div class="hint">Psst… “Play music” dabao aur Happy Birthday tune suno 🎶 (phone ka media volume bhi check karna)</div>
+      </section>
+
+      <section id="cakeSection" class="card cake-card hidden">
+        <div class="eyebrow" style="color:#a14b91">Birthday protocol activated</div>
+        <div class="cake" aria-label="birthday cake">🎂</div>
+        <h2>Wish maang, Gungun! 🌟</h2>
+        <p class="cake-caption">Cake virtual hai, calories zero. Main kitna thoughtful hoon, dekha? 😂</p>
+        <button class="btn" id="candlesBtn" type="button">Blow the candles 🕯️</button>
+        <p id="candleMessage" class="tiny" aria-live="polite"></p>
+      </section>
+
+      <section id="giftSection" class="card gift-area hidden">
+        <div class="eyebrow" style="color:#a14b91">One more thing…</div>
+        <span class="gift" aria-hidden="true">🎁</span>
+        <h2>Ek chhota sa gift hai tere liye</h2>
+        <p>Warning: is gift ki wrapping paper nahi hai, aur return policy bhi nahi. 😌</p>
+        <button class="btn" id="giftBtn" type="button">Open the gift 💝</button>
+      </section>
+
+      <section id="letterSection" class="letter hidden">
+        <div class="eyebrow" style="color:#a14b91">From my screen to you</div>
+        <h2>Dear Gungun, 💌</h2>
+        <p>Sabse pehle toh <strong>HAPPIEST BIRTHDAYYY!</strong> 🥳💗</p>
+        <p>Online mile hain, distance bhi hai, aur birthday pe saamne aake wish karna possible nahi… warna cake ka pehla bite main khud chura leta. Bas inform kar raha hoon. 😂</p>
+        <p>Mazaak apni jagah, par I genuinely hope tera naya saal bohot saari khushiyan, peace, success aur aise moments laaye jahan tu bina kisi tension ke dil se hase. Jo cheezein tu chup-chaap wish karti hai, unmein se bhi kuch khoobsurat cheezein tere haq mein ho jaayein. ✨</p>
+        <p>Thanks for being you — apni cute si, thodi si pagal, aur apne tareeke se special wali self. Aaj ke din bas yaad rakhna: tu important hai, teri happiness matter karti hai, aur tu achhi cheezon ki deserve karti hai. 💕</p>
+        <p>Ab zyada emotional mat hona… warna main bol dunga aankh mein glitter chala gaya. 😭😂</p>
+        <p><strong>Happy Birthday once again, Gungun!</strong> Hamesha khush reh, apni smile sambhaal ke rakh, aur haan—cake mere naam ka bhi kha lena. 🎂</p>
+        <p class="signature">— Nobi 😎💖</p>
+        <div style="text-align:center; margin-top:26px">
+          <button class="btn" id="finalBtn" type="button">Last surprise? 👀</button>
+        </div>
+      </section>
+
+      <section id="finalSection" class="card final hidden">
+        <div class="big-heart">💖</div>
+        <h2>One last thing, Gungun…</h2>
+        <p>Chahe miles door hain, aaj ki wish full dil se bheji hai.</p>
+        <p><strong>Teri life mein khushiyan itni ho ki sad hone ke liye time hi na mile.</strong> 🌷</p>
+        <div style="text-align:left; background:#ffffffa8; border:1px solid #f4b7d5; border-radius:20px; padding:18px; margin:22px 0;">
+          <div style="font-weight:900; color:#9b4388; margin-bottom:10px;">🌙 Tere liye ek chhoti si shayari</div>
+          <p style="line-height:1.9; margin:0;">
+            Door rehkar bhi duaon mein yaad rakhunga,<br>
+            Teri hansi ko har khushi ki wajah likhunga.<br>
+            Tere har naye din mein roshni si bhar jaaye,<br>
+            Teri aankhon mein kabhi gham nazar na aaye.<br><br>
+            Janamdin par bas itni si dua hai meri,<br>
+            Har khwaab poora ho, khushiyon se bhari rahe duniya teri. 💖
+          </p>
+        </div>
+        <p>Ab jaa, birthday queen. Aaj nakhre allowed hain. Bas thode hi zyada. 👑😂</p>
+        <button class="btn" id="confettiBtn" type="button">Celebrate again! 🎉</button>
+      </section>
+    </main>
+    <footer>Made with ✨, a little chaos, and lots of birthday energy.</footer>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const sections = ["cakeSection", "giftSection", "letterSection", "finalSection"];
+    function reveal(id) {
+      $(id).classList.remove("hidden");
+      setTimeout(() => $(id).scrollIntoView({ behavior: "smooth", block: "center" }), 80);
+    }
+    function confetti(count = 70) {
+      const bits = ["💖", "✨", "🎉", "🌸", "💕", "⭐", "🎊"];
+      for (let i = 0; i < count; i++) {
+        const el = document.createElement("span");
+        el.className = "confetti";
+        el.textContent = bits[Math.floor(Math.random() * bits.length)];
+        el.style.left = Math.random() * 100 + "vw";
+        el.style.fontSize = (14 + Math.random() * 18) + "px";
+        el.style.animationDuration = (3 + Math.random() * 4) + "s";
+        el.style.animationDelay = (Math.random() * .8) + "s";
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 8500);
+      }
+    }
+    $("openBtn").addEventListener("click", () => {
+      reveal("cakeSection"); reveal("giftSection"); confetti(35);
+    });
+    $("candlesBtn").addEventListener("click", () => {
+      $("candleMessage").textContent = "Whoooosh! Candles bujh gayi. Ab wish universe ko deliver ho chuki hai. 🌠";
+      $("candlesBtn").textContent = "Wish sent! 💫";
+      confetti(45);
+    });
+    $("giftBtn").addEventListener("click", () => {
+      reveal("letterSection"); confetti(45);
+    });
+    $("finalBtn").addEventListener("click", () => {
+      reveal("finalSection"); confetti(65);
+    });
+    $("confettiBtn").addEventListener("click", () => confetti(100));
+
+    // Gentle original background music made with the Web Audio API.
+    // Browsers require a tap before sound can start. No external audio file needed.
+    let audioCtx = null, masterGain = null, musicTimer = null, noteIndex = 0, musicOn = false;
+    // A synthesized instrumental version of the familiar "Happy Birthday" melody.
+    // Notes are generated in-browser, so no audio download or external music file is needed.
+    const birthdayTune = [
+      [392.00, .32], [392.00, .32], [440.00, .64], [392.00, .64], [523.25, .64], [493.88, .95],
+      [392.00, .32], [392.00, .32], [440.00, .64], [392.00, .64], [587.33, .64], [523.25, .95],
+      [392.00, .32], [392.00, .32], [783.99, .64], [659.25, .64], [523.25, .64], [493.88, .64], [440.00, .95],
+      [698.46, .32], [698.46, .32], [659.25, .64], [523.25, .64], [587.33, .64], [523.25, 1.05]
+    ];
+    function playNote(freq, when, duration = 0.42) {
+      if (!audioCtx || !masterGain) return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(freq, when);
+      gain.gain.setValueAtTime(0.0001, when);
+      gain.gain.exponentialRampToValueAtTime(0.20, when + 0.035);
+      gain.gain.exponentialRampToValueAtTime(0.0001, when + duration);
+      osc.connect(gain); gain.connect(masterGain);
+      osc.start(when); osc.stop(when + duration + 0.03);
+    }
+    function startMusic() {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) { alert("Is browser mein background music support nahi ho raha."); return; }
+      if (!audioCtx) {
+        audioCtx = new AudioContext();
+        masterGain = audioCtx.createGain();
+        masterGain.gain.value = 0.65;
+        masterGain.connect(audioCtx.destination);
+      }
+      audioCtx.resume();
+      musicOn = true;
+      $("musicToggle").textContent = "♫ Pause music";
+      $("musicToggle").setAttribute("aria-pressed", "true");
+      if (musicTimer) clearTimeout(musicTimer);
+      noteIndex = 0;
+      const playNext = () => {
+        if (!musicOn) return;
+        const [freq, length] = birthdayTune[noteIndex % birthdayTune.length];
+        const now = audioCtx.currentTime;
+        playNote(freq, now, length * 0.9);
+        // Soft lower note underneath each phrase for a fuller birthday feel.
+        if (noteIndex === 0 || noteIndex === 6 || noteIndex === 12 || noteIndex === 19) {
+          playNote(freq / 2, now, length * 1.25);
+        }
+        noteIndex++;
+        musicTimer = setTimeout(playNext, length * 520);
+      };
+      playNext();
+    }
+    function stopMusic() {
+      musicOn = false;
+      if (musicTimer) clearTimeout(musicTimer);
+      musicTimer = null;
+      if (audioCtx) audioCtx.suspend();
+      $("musicToggle").textContent = "♫ Play music";
+      $("musicToggle").setAttribute("aria-pressed", "false");
+    }
+    $("musicToggle").addEventListener("click", () => musicOn ? stopMusic() : startMusic());
+  </script>
+</body>
+</html>
